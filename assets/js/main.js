@@ -118,15 +118,14 @@
 						});
 
 				});
-		// Title Bar.
+			// Title Bar.
 			$titleBar = $(
 				'<div id="titleBar">' +
 					'<a href="#header" class="toggle"></a>' +
-					'<span class="title">' + $('#logo').html() + '</span>' +
+					'<span class="title"><a href="#"><img src="images/logo.png" alt="Therapy with Xanthe logo" class="titlebar-logo" />Therapy with Xanthe</a></span>' +
 				'</div>'
 			)
 				.appendTo($body);
-
 		// Panel.
 			$header
 				.panel({
