@@ -2836,7 +2836,7 @@ input, select, textarea {
 
 	#main > section {
 		border-top: solid 6px #f4f4f4;
-		scroll-margin-top: 3rem; /* Provides clean click-to-scroll gap at the top */
+		scroll-margin-top: 3rem;
 	}
 
 		#main > section > .container {
@@ -3389,4 +3389,44 @@ input, select, textarea {
 	margin: 0.75em auto 0 auto;
 	width: 3em; /* Down from 4.5em — try 2.75em or 3.25em to fine-tune */
 	height: auto;
+}
+/*Top Bar with Logo */
+#titleBar {
+	background: #E9B872 !important;
+	box-shadow: 0 2px 10px rgba(59, 47, 47, 0.1);
+}
+
+#titleBar .title {
+	display: flex;
+	align-items: center;
+	height: 100%;
+	padding: 0 4.5em 0 1em;
+}
+
+#titleBar .title a {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.55em;
+	color: #4A4A4A !important; 
+	font-weight: 700;
+	letter-spacing: 0.02em;
+	border-bottom: none !important;
+	line-height: 1;
+}
+
+#titleBar .titlebar-logo {
+	height: 28px;
+	width: auto;
+	display: block;
+}
+
+#titleBar .toggle:before {
+	background: transparent !important;
+	color: #455A64 !important;
+	font-size: 20px;
+	transition: color 0.2s ease;
+}
+
+#titleBar .toggle:hover:before {
+	color: #F7F5F0 !important;
 }
